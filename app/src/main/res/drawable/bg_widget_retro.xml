@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer CRT bezel border -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#0B0D11" />
+            <stroke
+                android:width="1.5dp"
+                android:color="#2A2F3D" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+    <!-- Inner CRT Screen Inset -->
+    <item
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:endColor="#0B0D12"
+                android:startColor="#11141C" />
+            <corners android:radius="11dp" />
+        </shape>
+    </item>
+</layer-list>
+

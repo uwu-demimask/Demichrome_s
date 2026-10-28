@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_widget_retro"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- Header Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/widget_header_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="DEMICHROME // FOCUS"
+            android:textColor="#A0A8B8"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/widget_status_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_widget_badge"
+            android:fontFamily="monospace"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="2dp"
+            android:text="READY"
+            android:textColor="#E0E6F0"
+            android:textSize="9sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Main Countdown Display & Subtitle -->
+    <LinearLayout
+        android:id="@+id/widget_timer_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/widget_timer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="25:00"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/widget_subtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:ellipsize="end"
+            android:fontFamily="monospace"
+            android:maxLines="1"
+            android:text="🛡️ SHIELDS ARMED // TAP TO FOCUS"
+            android:textColor="#858D9F"
+            android:textSize="9.5sp" />
+    </LinearLayout>
+
+    <!-- Interactive Button Controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Reset Button -->
+        <TextView
+            android:id="@+id/widget_btn_reset"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_widget_button"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="↺ RESET"
+            android:textColor="#C2C9D6"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="6dp"
+            android:layout_height="1dp" />
+
+        <!-- Quick +5M Button -->
+        <TextView
+            android:id="@+id/widget_btn_add_5"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_widget_button"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="+5 MIN"
+            android:textColor="#C2C9D6"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="6dp"
+            android:layout_height="1dp" />
+
+        <!-- Primary Start / Pause Toggle -->
+        <TextView
+            android:id="@+id/widget_btn_toggle"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1.4"
+            android:background="@drawable/bg_widget_button_accent"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="▶ START"
+            android:textColor="#0E1015"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
